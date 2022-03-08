@@ -1,0 +1,20 @@
+{{{html}}}
+
+<section class="single-cta">
+    {{#has visibility="paid"}}
+        <h2 class="single-cta-title">Esse conteúdo é para assinantes</h2>
+    {{/has}}
+    {{#has visibility="members"}}
+        <h2 class="single-cta-title">Esse conteúdo é apenas para assinantes</h2>
+    {{/has}}
+    {{#has visibility="filter"}}
+        <h2 class="single-cta-title">Esse conteúdo é para assinantes {{products}} apenas</h2>
+    {{/has}}
+    {{#if @member}}
+        <button class="button single-cta-button" data-portal="account/plans">Atualizar plano</button>
+    {{else}}
+        <button class="button single-cta-button" data-portal="signup">Assinar agora</button>
+        <br>
+        <button class="button-text single-cta-footer" data-portal="signin">Já é assinante? Acesse</button>
+    {{/if}}
+</section>

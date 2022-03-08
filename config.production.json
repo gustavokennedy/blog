@@ -1,0 +1,29 @@
+{
+  "url": "https://blog.renkel.com.br",
+  "server": {
+    "port": 2368,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "mysql",
+    "connection": {
+      "host": "localhost",
+      "user": "ghost-72",
+      "password": "SMJthK23eRWABXLUh69f",
+      "database": "blog_renkel_com_br_prod"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/www/blog.renkel.com.br/content"
+  }
+}
